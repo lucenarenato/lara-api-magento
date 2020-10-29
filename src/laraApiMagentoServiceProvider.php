@@ -8,9 +8,9 @@ class laraApiMagentoServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__.'resources/database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/resources/database/migrations');
         $this->publishes(
-            [__DIR__ . 'resources/database/migrations' => base_path('database/migrations')],
+            [__DIR__ . '/resources/database/migrations' => base_path('database/migrations')],
             'migrations'
         );
         // $this->loadViewsFrom(__DIR__ . '/../../resources/views/codecategory', 'codecategory');
